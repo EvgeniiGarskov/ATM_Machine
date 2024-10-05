@@ -1,0 +1,76 @@
+ERROR 2024-10-03 20:16:59 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:63) - Ошибка формата ввода для депозита: For input string: "Число"
+ERROR 2024-10-03 20:16:59 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:79) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:23:03 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:97) - Ошибка: Сумма снятия не может быть отрицательной
+ERROR 2024-10-03 20:23:03 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:88) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:23:03 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:79) - Произошла ошибка. Неправильное значение: For input string: "abc"
+ERROR 2024-10-03 20:24:21 [main] com.example.atm_machine.Controllers.RegisterController (RegisterController.java:86) - Такой логин уже используется
+ERROR 2024-10-03 20:26:11 [main] com.example.atm_machine.Controllers.TransactionListViewController (TransactionListViewController.java:63) - An error occurred while processing transactions from the database: 
+ResultSet failed
+ERROR 2024-10-03 20:26:11 [main] com.example.atm_machine.Controllers.TransactionListViewController (TransactionListViewController.java:66) - Failed to get transactions for login: 9999
+PreparedStatement failed
+ERROR 2024-10-03 20:27:21 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:75) - Ошибка формата ввода для перевода: For input string: "Сумма"
+ERROR 2024-10-03 20:27:21 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:88) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:29:21 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:60) - Ошибка формата ввода для внесения: For input string: "Число"
+ERROR 2024-10-03 20:29:21 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:71) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:30:26 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:60) - Ошибка формата ввода для внесения: For input string: "Число"
+ERROR 2024-10-03 20:30:26 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:71) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:32:55 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:63) - Ошибка формата ввода для депозита: For input string: "Число"
+ERROR 2024-10-03 20:32:55 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:79) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:35:14 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:75) - Ошибка формата ввода для перевода: For input string: "Сумма"
+ERROR 2024-10-03 20:35:14 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:88) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-03 20:36:11 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:60) - Ошибка формата ввода для внесения: For input string: "Число"
+ERROR 2024-10-03 20:36:11 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:71) - Ошибка: не удалось получить информацию о пользователе
+INFO  2024-10-03 20:39:52 [main] com.example.atm_machine.Application (Application.java:27) - Старт приложения
+INFO  2024-10-03 20:40:12 [main] com.example.atm_machine.Application (Application.java:29) - Приложение завершено успешно
+INFO  2024-10-03 20:42:53 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-03 20:44:23 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-03 20:44:39 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-03 20:44:56 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-03 20:47:07 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-03 20:47:30 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+ERROR 2024-10-03 20:47:42 [main] com.example.atm_machine.Controllers.RegisterController (RegisterController.java:86) - Такой логин уже используется
+INFO  2024-10-05 16:22:08 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 16:27:44 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 16:28:17 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 16:28:45 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 16:30:35 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 16:30:51 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 16:39:49 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 16:40:21 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 16:42:54 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 16:45:09 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+ERROR 2024-10-05 16:45:49 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:64) - Ошибка формата ввода для депозита: For input string: "Число"
+ERROR 2024-10-05 16:45:49 [main] com.example.atm_machine.Controllers.DepositController (DepositController.java:80) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-05 16:53:01 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:97) - Ошибка: Сумма снятия не может быть отрицательной
+ERROR 2024-10-05 16:53:01 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:88) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-05 16:53:01 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:79) - Произошла ошибка. Неправильное значение: For input string: "abc"
+ERROR 2024-10-05 16:53:01 [main] com.example.atm_machine.Helper (Helper.java:41) - Ошибка при открытии новой сцены: 
+/C:/Users/Евгений/03.10/ATM_Machine/target/classes/Fxml/TransactionsListView.fxml
+
+ERROR 2024-10-05 16:53:19 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:97) - Ошибка: Сумма снятия не может быть отрицательной
+ERROR 2024-10-05 16:53:20 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:88) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-05 16:53:20 [main] com.example.atm_machine.Controllers.MenuController (MenuController.java:79) - Произошла ошибка. Неправильное значение: For input string: "abc"
+ERROR 2024-10-05 16:54:52 [main] com.example.atm_machine.Controllers.RegisterController (RegisterController.java:86) - Такой логин уже используется
+ERROR 2024-10-05 16:59:19 [main] com.example.atm_machine.Controllers.TransactionListViewController (TransactionListViewController.java:64) - An error occurred while processing transactions from the database: 
+ResultSet failed
+ERROR 2024-10-05 16:59:19 [main] com.example.atm_machine.Controllers.TransactionListViewController (TransactionListViewController.java:67) - Failed to get transactions for login: 9999
+PreparedStatement failed
+ERROR 2024-10-05 17:00:11 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:76) - Ошибка формата ввода для перевода: For input string: "Сумма"
+ERROR 2024-10-05 17:00:11 [main] com.example.atm_machine.Controllers.TransferController (TransferController.java:89) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-05 17:00:48 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:61) - Ошибка формата ввода для внесения: For input string: "Число"
+ERROR 2024-10-05 17:00:48 [main] com.example.atm_machine.Controllers.WithdrawalController (WithdrawalController.java:72) - Ошибка: не удалось получить информацию о пользователе
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:136) - An error occurred while adding a user to the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:59) - An error occurred while searching for a user in the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:116) - An error occurred while searching for first and last name in the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:175) - An error occurred while searching for login in the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:157) - An error occurred while searching for Id in the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:74) - An error occurred while updating the balance in the database: Database error
+ERROR 2024-10-05 17:01:25 [main] com.example.atm_machine.DatabaseHandler (DatabaseHandler.java:93) - An error occurred while adding a transaction to the database: Database error
+INFO  2024-10-05 17:02:28 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 17:02:55 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 17:06:06 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 17:06:17 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 18:33:23 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 18:33:26 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно
+INFO  2024-10-05 19:16:11 [main] com.example.atm_machine.Application (Application.java:24) - Старт приложения
+INFO  2024-10-05 19:16:31 [main] com.example.atm_machine.Application (Application.java:26) - Приложение завершено успешно

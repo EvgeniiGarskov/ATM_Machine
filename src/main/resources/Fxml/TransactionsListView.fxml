@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ebebeb;" styleClass="transaction_container" stylesheets="@../Styles/Transactions.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.TransactionListViewController">
+    <Button fx:id="transactionGoToMenuButton" layoutX="634.0" layoutY="79.0" mnemonicParsing="false" onAction="#openMenuScene" prefHeight="67.0" prefWidth="137.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="transaction_button" text="Вернуться в меню" wrapText="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <DropShadow />
+        </effect></Button>
+    <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #003049;" styleClass="top_transaction_container">
+        <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Styles/logo.png" />
+        </ImageView>
+      <Text layoutX="188.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="14.0" />
+    </AnchorPane>
+   <ListView fx:id="transactionListView" focusTraversable="false" layoutX="24.0" layoutY="167.0" prefHeight="300.0" prefWidth="740.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+</AnchorPane>

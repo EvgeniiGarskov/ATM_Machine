@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" styleClass="login_container" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.LoginController">
+   <Label layoutX="277.0" layoutY="60.0" prefHeight="40.0" prefWidth="210.0" text="Логин" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="60.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+   <TextField fx:id="loginField" alignment="CENTER" layoutX="281.0" layoutY="115.0" prefHeight="40.0" prefWidth="210.0" promptText="****" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="110.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </TextField>
+   <PasswordField fx:id="passwordField" alignment="CENTER" layoutX="281.0" layoutY="206.0" prefHeight="40.0" prefWidth="210.0" promptText="****" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="210.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </PasswordField>
+   <Button fx:id="signInButton" layoutX="281.0" layoutY="266.0" mnemonicParsing="false" onAction="#userAuthentication" prefHeight="40.0" prefWidth="210.0" text="Войти" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="270.0">
+      <font>
+         <Font size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="250.0" styleClass="login_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="119.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Styles/logo.png" />
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" />
+   </VBox>
+   <Label layoutX="281.0" layoutY="166.0" prefHeight="40.0" prefWidth="210.0" text="Пароль" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="160.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+   </Label>
+   <Label fx:id="errorLabel" layoutX="281.0" layoutY="348.0" prefHeight="35.0" prefWidth="350.0" styleClass="login_error_label" textFill="RED" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="330.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Button fx:id="goToRegisterButton" layoutX="576.0" layoutY="14.0" mnemonicParsing="false" onAction="#openRegisterScene" prefHeight="40.0" prefWidth="210.0" text="Зарегистрироваться" AnchorPane.leftAnchor="576.0" AnchorPane.topAnchor="14.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>

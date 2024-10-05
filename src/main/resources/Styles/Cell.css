@@ -1,0 +1,11 @@
+    .cell_container {
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 5;
+    }
+
+    .cell_container Label {
+        -fx-alignment: center;
+        -fx-text-fill: #000000;
+        -fx-font-size: 12px;
+        -fx-font-weight: Bold;
+    }

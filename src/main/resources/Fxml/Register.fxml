@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" style="-fx-background-color: #ebebeb;" styleClass="register_container" stylesheets="@../Styles/Register.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.RegisterController">
+    <Label fx:id="registerNameLabel" layoutX="280.0" layoutY="30.0" prefHeight="40.0" prefWidth="210.0" text="Имя" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="30.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <TextField fx:id="registerNameTextField" alignment="CENTER" layoutX="280.0" layoutY="66.0" prefHeight="40.0" prefWidth="210.0" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="70.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </TextField>
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="250.0" styleClass="register_logo_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <ImageView fitHeight="119.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@../Styles/logo.png" />
+        </ImageView>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" />
+    </VBox>
+    <Label fx:id="registerSurnameLabel" layoutX="280.0" layoutY="110.0" prefHeight="40.0" prefWidth="210.0" text="Фамилия" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="110.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Label>
+    <Label fx:id="registerErrorLabel" alignment="TOP_LEFT" layoutX="520.0" layoutY="70.0" prefHeight="120.0" prefWidth="250.0" styleClass="register_error_label" wrapText="true" AnchorPane.leftAnchor="520.0" AnchorPane.topAnchor="70.0">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Button fx:id="registerAddUserButton" layoutX="276.0" layoutY="268.0" mnemonicParsing="false" onAction="#addUser" prefHeight="40.0" prefWidth="480.0" text="Добавить пользователя" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="280.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+   <Label fx:id="registerPasswordLabel" layoutX="280.0" layoutY="190.0" prefHeight="40.0" prefWidth="210.0" text="Пароль" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="190.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <TextField fx:id="registerSurnameTextField" alignment="CENTER" layoutX="280.0" layoutY="140.0" prefHeight="40.0" prefWidth="210.0" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="150.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="registerPasswordTextField" alignment="CENTER" layoutX="280.0" layoutY="230.0" prefHeight="40.0" prefWidth="210.0" promptText="****" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="230.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </TextField>
+   <Button fx:id="registerGoToLoginButton" layoutX="610.0" layoutY="330.0" mnemonicParsing="false" onAction="#openLoginScene" prefHeight="40.0" prefWidth="150.0" text="Назад" AnchorPane.leftAnchor="610.0" AnchorPane.topAnchor="330.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+</AnchorPane>

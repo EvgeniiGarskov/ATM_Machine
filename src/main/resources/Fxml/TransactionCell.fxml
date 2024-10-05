@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="50.0" prefWidth="710.0" styleClass="cell_container" stylesheets="@../Styles/Cell.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <Label fx:id="cellNameLabel" alignment="CENTER" layoutX="70.0" layoutY="10.0" prefHeight="30.0" prefWidth="120.0" style="-fx-font-weight: 700;" text="Label" />
+   <Label fx:id="cellOperationLabel" alignment="CENTER" layoutX="250.0" layoutY="10.0" prefHeight="30.0" prefWidth="120.0" style="-fx-font-weight: 700;" text="Label" />
+   <Label fx:id="cellAmountLabel" alignment="CENTER" layoutX="609.0" layoutY="10.0" prefHeight="30.0" prefWidth="80.0" style="-fx-font-weight: 700;" text="Label" />
+   <ImageView fx:id="transactionCellImage" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../Styles/211624_c_up_arrow_icon.png" />
+   </ImageView>
+   <Label fx:id="cellDateLabel" alignment="CENTER" layoutX="445.0" layoutY="10.0" prefHeight="30.0" prefWidth="120.0" style="-fx-font-weight: 700;" text="Label" />
+</AnchorPane>

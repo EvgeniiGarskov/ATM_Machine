@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ebebeb;" styleClass="withdrawal_container" stylesheets="@../Styles/Withdrawal.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.WithdrawalController">
+    <Button fx:id="withdrawalGoToMenuButton" layoutX="634.0" layoutY="79.0" mnemonicParsing="false" onAction="#openMenuScene" prefHeight="67.0" prefWidth="137.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Вернуться в меню" wrapText="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <DropShadow />
+        </effect></Button>
+   <TextField fx:id="withdrawalTextField" layoutX="300.0" layoutY="164.0" prefHeight="35.0" prefWidth="200.0" promptText="Введите сумму" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="165.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></TextField>
+   <Label fx:id="withdrawalLabel" layoutX="300.0" layoutY="79.0" prefHeight="70.0" prefWidth="230.0" textFill="RED" wrapText="true" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="80.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <Button fx:id="withdrawalButton" layoutX="660.0" layoutY="266.0" mnemonicParsing="false" onAction="#withdrawal" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Снять" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="30.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="withdrawalResetButton" layoutX="661.0" layoutY="326.0" mnemonicParsing="false" onAction="#resetWithdrawalFields" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Сбросить" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="30.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="withdrawalAppendNumberButton" layoutX="286.0" layoutY="130.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="1" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="439.0" layoutY="130.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="3" AnchorPane.bottomAnchor="215.0" AnchorPane.rightAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="375.0" layoutY="130.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="2" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="286.0" layoutY="200.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="4" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="375.0" layoutY="194.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="5" AnchorPane.bottomAnchor="155.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="439.0" layoutY="200.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="6" AnchorPane.bottomAnchor="155.0" AnchorPane.rightAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="311.0" layoutY="263.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="7" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="375.0" layoutY="263.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="8" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="439.0" layoutY="263.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="9" AnchorPane.bottomAnchor="95.0" AnchorPane.rightAnchor="310.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Button layoutX="375.0" layoutY="323.0" mnemonicParsing="false" onAction="#appendNumberToWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="withdrawal_entering_numbers" text="0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="375.0">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+   <Label alignment="TOP_LEFT" layoutX="29.0" layoutY="165.0" prefHeight="94.0" prefWidth="216.0" styleClass="withdrawal_help_label" text="Пожалуйста, введите сумму, кратную 100 рублям" wrapText="true" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="165.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #003049;" styleClass="top_withdrawal_container">
+      <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Styles/logo.png" />
+      </ImageView>
+      <Text layoutX="254.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="14.0" />
+   </AnchorPane>
+   <Button fx:id="withdrawalDeleteButton" layoutX="440.0" layoutY="420.0" mnemonicParsing="false" onAction="#deleteLastDigitFromWithdrawal" prefHeight="45.0" prefWidth="50.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="deposit_entering_numbers">
+      <font>
+         <Font name="System Bold" size="21.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </Button>
+   <ImageView disable="true" fitHeight="35.0" fitWidth="35.0" layoutX="448.0" layoutY="425.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@../Styles/delete.png"/>
+   </ImageView>
+</AnchorPane>

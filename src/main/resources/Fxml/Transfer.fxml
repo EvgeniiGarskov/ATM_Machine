@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ebebeb;" styleClass="transfer_container" stylesheets="@../Styles/Transfer.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.TransferController">
+    <Button fx:id="transferGoToMenuButton" layoutX="634.0" layoutY="79.0" mnemonicParsing="false" onAction="#openMenuScene" prefHeight="67.0" prefWidth="137.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Вернуться в меню" wrapText="true" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="80.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <DropShadow />
+        </effect></Button>
+    <TextField fx:id="transferTextField" layoutX="305.0" layoutY="376.0" prefHeight="35.0" prefWidth="220.0" promptText="Введите сумму" AnchorPane.leftAnchor="300.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font></TextField>
+    <Label fx:id="transferLabel" layoutX="300.0" layoutY="95.0" prefHeight="70.0" prefWidth="230.0" textFill="RED" wrapText="true" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="80.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font></Label>
+    <Button fx:id="transferButton" layoutX="660.0" layoutY="266.0" mnemonicParsing="false" onAction="#transfer" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Перевести" AnchorPane.bottomAnchor="85.0" AnchorPane.rightAnchor="30.0">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <DropShadow />
+        </effect>
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="transferResetButton" layoutX="661.0" layoutY="326.0" mnemonicParsing="false" onAction="#resetTransferFields" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Сбросить" AnchorPane.bottomAnchor="35.0" AnchorPane.rightAnchor="30.0">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <effect>
+            <DropShadow />
+        </effect>
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Button>
+    <Label fx:id="transferRecipientLabel" alignment="TOP_LEFT" layoutX="300.0" layoutY="278.0" prefHeight="60.0" prefWidth="220.0" styleClass="transfer_help_label" text="Получатель:" wrapText="true" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="290.0">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font></Label>
+    <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #003049;" styleClass="top_transfer_container">
+        <ImageView fitHeight="50.0" fitWidth="60.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+            <Image url="@../Styles/logo.png" />
+        </ImageView>
+      <Text layoutX="196.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" AnchorPane.leftAnchor="70.0" AnchorPane.topAnchor="14.0" />
+    </AnchorPane>
+   <TextField fx:id="transferLoginTextField" layoutX="300.0" layoutY="179.0" prefHeight="35.0" prefWidth="220.0" promptText="Введите логин" AnchorPane.leftAnchor="300.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </TextField>
+   <Button fx:id="transferSearchButton" layoutX="300.0" layoutY="231.0" mnemonicParsing="false" onAction="#findUserToTransferAmount" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Найти" AnchorPane.leftAnchor="300.0">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect>
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Button>
+</AnchorPane>

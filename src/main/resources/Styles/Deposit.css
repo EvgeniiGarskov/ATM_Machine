@@ -1,0 +1,55 @@
+    .deposit_container {
+        -fx-background-color: #ebebeb;
+    }
+
+    .deposit_container Button {
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 5;
+        -fx-text-fill: #000000;
+        -fx-font-size: 18px;
+        -fx-font-weight: Bold;
+    }
+
+    .deposit_container TextField {
+        -fx-text-fill: #000000;
+        -fx-font-size: 18px;
+        -fx-font-weight: Bold;
+    }
+
+    .deposit_container Label {
+        -fx-text-fill: #000000;
+        -fx-font-size: 18px;
+        -fx-font-weight: Bold;
+    }
+
+    .deposit_entering_numbers {
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius: 5;
+        -fx-text-fill: #000000;
+        -fx-font-size: 21px;
+        -fx-font-weight: Bold;
+    }
+
+    .deposit_help_label {
+        -fx-alignment: TOP_LEFT;
+        -fx-text-fill: #000000;
+        -fx-font-size: 18px;
+        -fx-font-weight: Bold;
+    }
+
+    .top_deposit_container {
+        -fx-background-color: #003049;
+    }
+
+    .top_deposit_container Label {
+        -fx-alignment: CENTER;
+        -fx-font-size: 22px;
+        -fx-text-fill: #FFFFFF;
+        -fx-font-weight: 400;
+    }
+
+    .top_deposit_container Text {
+        -fx-font-size: 22px;
+        -fx-fill: #FFFFFF;
+        -fx-font-weight: 400;
+    }

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #ebebeb;" styleClass="menu_container" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.atm_machine.Controllers.MenuController">
+   <VBox prefHeight="400.0" prefWidth="200.0" styleClass="left_menu_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="109.0" fitWidth="99.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Styles/logo.png" />
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Банк" />
+   </VBox>
+   <Label fx:id="menuNameLabel" layoutX="223.0" layoutY="28.0" prefHeight="35.0" prefWidth="258.0" text="Здраствуйте, Пользователь!" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font></Label>
+   <Button fx:id="menuLogoutButton" layoutX="584.0" layoutY="89.0" mnemonicParsing="false" onAction="#openLogoutScene" prefHeight="70.0" prefWidth="155.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Завершить обслуживание" wrapText="true" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="89.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <effect>
+         <DropShadow />
+      </effect></Button>
+   <AnchorPane layoutX="223.0" layoutY="124.0" prefHeight="114.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_card_container">
+      <effect>
+         <DropShadow />
+      </effect>
+      <Label fx:id="menuBalanceLabel" layoutX="27.0" layoutY="25.0" prefHeight="30.0" prefWidth="100.0" text="Баланс">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="menuCardNumberLabel" layoutX="27.0" layoutY="70.0" prefHeight="30.0" prefWidth="180.0" text="**** **** **** 4276">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+   <AnchorPane layoutX="223.0" layoutY="294.0" prefHeight="162.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_withdrawal_container" AnchorPane.bottomAnchor="45.0">
+      <effect>
+         <DropShadow />
+      </effect>
+      <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Снять ₽">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="menuGoToWithdrawalButton" layoutX="14.0" layoutY="113.0" mnemonicParsing="false" onAction="#openWithdrawalScene" prefHeight="35.0" prefWidth="213.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Другая сумма">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fastWithdrawalButton500" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#fastWithdrawal" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_fast_withdrawal_button" text="500">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fastWithdrawalButton2000" layoutX="163.0" layoutY="69.0" mnemonicParsing="false" onAction="#fastWithdrawal" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_fast_withdrawal_button" text="2000">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="fastWithdrawalButton1000" layoutX="87.0" layoutY="69.0" mnemonicParsing="false" onAction="#fastWithdrawal" prefHeight="30.0" prefWidth="64.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_fast_withdrawal_button" text="1000">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </AnchorPane>
+   <Button fx:id="menuGotoDepositButton" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="494.0" layoutY="293.0" mnemonicParsing="false" onAction="#openDepositScene" prefHeight="81.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" styleClass="menu_deposit_button" text="Внести" AnchorPane.rightAnchor="61.0">
+      <font>
+         <Font name="System Bold" size="24.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Button fx:id="menuGoToTransferButton" layoutX="489.0" layoutY="385.0" mnemonicParsing="false" onAction="#openTransferScene" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="Перевод" AnchorPane.bottomAnchor="45.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+   <Label layoutX="223.0" layoutY="85.0" prefHeight="30.0" prefWidth="250.0" text="Карты">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Label layoutX="223.0" layoutY="250.0" prefHeight="30.0" prefWidth="250.0" text="Операции">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+   <Button fx:id="menuGoToTransactionButton" layoutX="619.0" layoutY="385.0" mnemonicParsing="false" onAction="#openTransactionScene" prefHeight="70.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="История операций" wrapText="true" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="61.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+      <effect>
+         <DropShadow />
+      </effect>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <Label fx:id="menuDateLabel" alignment="CENTER_RIGHT" layoutX="619.0" layoutY="30.0" prefHeight="35.0" prefWidth="120.0" text="01.01.2024" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="30.0">
+      <font>
+         <Font name="System Bold" size="18.0" />
+      </font>
+   </Label>
+</AnchorPane>
